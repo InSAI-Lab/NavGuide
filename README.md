@@ -33,4 +33,4 @@ For extended navigation, install `requirements-navigation.txt`, prepare the task
 
 ## License
 
-See [LICENSE](LICENSE) and [Third-Party Notices](THIRD_PARTY_NOTICES.md) for license terms and attribution.
+See [LICENSE](LICENSE) for license terms.

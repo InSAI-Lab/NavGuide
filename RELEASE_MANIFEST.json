@@ -46,18 +46,13 @@
   },
   {
     "path": "README.md",
-    "bytes": 1434,
-    "sha256": "0bbd78f82d97634d7fbcf0dc279b445bf8b9076fff804442f78b25466ddde520"
+    "bytes": 1368,
+    "sha256": "ddd7404207e975e9bf1933865df0cd37424ac4dc80b26c6653f3fd227f359cc6"
   },
   {
     "path": "SECURITY.md",
     "bytes": 862,
     "sha256": "3e69fb3af60e58134ebe0b419158de57170f3c110826e1a797ec26e6d8083262"
-  },
-  {
-    "path": "THIRD_PARTY_NOTICES.md",
-    "bytes": 1167,
-    "sha256": "83f9a914f6c392377632cbf88d6d20fc357ecf84deee476224d64a4a9d8f5287"
   },
   {
     "path": "constraints.txt",
@@ -111,8 +106,8 @@
   },
   {
     "path": "docs/release.md",
-    "bytes": 1376,
-    "sha256": "2d9b28cd18b80d8ff1897bf4f09bed411101b139ede3c639edccb5ffa7754c9c"
+    "bytes": 1390,
+    "sha256": "d67282ef6040adeba26ee414b4fe9a9cdda1a489afdf071deeca0b53ad67fc44"
   },
   {
     "path": "examples/camera_calibration.example.json",
