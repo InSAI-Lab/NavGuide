@@ -1,0 +1,5 @@
+{
+  "models": [
+    {"file": "yoloe-11l-seg.pt", "source": "FILL_FROM_MODEL_OWNER", "license": "VERIFY_WITH_MODEL_OWNER", "sha256": ""}
+  ]
+}

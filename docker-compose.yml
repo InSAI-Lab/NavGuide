@@ -1,0 +1,31 @@
+services:
+  navguide:
+    build: .
+    restart: unless-stopped
+    init: true
+    ports:
+      - "${NAVGUIDE_BIND_IP:-127.0.0.1}:8081:8081"
+    environment:
+      NAVGUIDE_HOST: 0.0.0.0
+      NAVGUIDE_DEVICE_TOKEN: ${NAVGUIDE_DEVICE_TOKEN:?Set a random device token of at least 24 characters}
+      NAVGUIDE_FRONTEND: observations
+      NAVGUIDE_SPEECH_ENABLED: ${NAVGUIDE_SPEECH_ENABLED:-false}
+      NAVGUIDE_CLOUD_ENABLED: ${NAVGUIDE_CLOUD_ENABLED:-false}
+      NAVGUIDE_CLOUD_URL: ${NAVGUIDE_CLOUD_URL:-}
+      NAVGUIDE_CLOUD_TOKEN: ${NAVGUIDE_CLOUD_TOKEN:-}
+      DASHSCOPE_API_KEY: ${DASHSCOPE_API_KEY:-}
+      DASHSCOPE_COMPAT_BASE: ${DASHSCOPE_COMPAT_BASE:-https://dashscope.aliyuncs.com/compatible-mode/v1}
+      QWEN_OMNI_MODEL: ${QWEN_OMNI_MODEL:-qwen-omni-turbo}
+      QWEN_TEXT_MODEL: ${QWEN_TEXT_MODEL:-qwen-turbo}
+      CLOUD_TIMEOUT_SECONDS: ${CLOUD_TIMEOUT_SECONDS:-30}
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    pids_limit: 128
+    mem_limit: 768m
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"

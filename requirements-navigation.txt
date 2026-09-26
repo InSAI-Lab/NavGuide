@@ -1,0 +1,5 @@
+-r requirements-vision.txt
+dashscope>=1.20,<2
+mediapipe>=0.10.8,<0.10.22
+pygame>=2.5,<3
+# PyTorch must match CUDA or JetPack. Do not replace Jetson wheels with generic wheels.

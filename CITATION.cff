@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the NavGuide paper when using the algorithm. Publication details are pending."
+title: "NavGuide: Task-Aware Visual Content Selection and Inertial Gating for Wearable Spoken Guidance"
+type: software
+authors:
+  - family-names: Li
+    given-names: Shicheng
+  - family-names: Yang
+    given-names: Fengjiao
+  - family-names: Zhang
+    given-names: Jiuhan
+  - family-names: Zhang
+    given-names: Jiaming
+repository-code: https://github.com/InSAI-Lab/NavGuide

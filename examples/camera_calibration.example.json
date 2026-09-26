@@ -1,0 +1,13 @@
+{
+  "note": "Illustrative values only. Replace with measurements from your camera and object priors.",
+  "intrinsics": {
+    "reference_width": 2048,
+    "reference_height": 1536,
+    "vertical_fov_deg": 60.0,
+    "calibrated_focal_length_y": 1330.2150202128978
+  },
+  "class_height_priors": {
+    "person": 1.7,
+    "car": 1.5
+  }
+}

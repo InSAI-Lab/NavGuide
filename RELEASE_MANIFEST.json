@@ -1,0 +1,592 @@
+[
+  {
+    "path": ".dockerignore",
+    "bytes": 718,
+    "sha256": "68191b23e9c50d48478a6f98dce8e9fd31b559e681b8cbb15e88cb82fef46b95"
+  },
+  {
+    "path": ".env.example",
+    "bytes": 1316,
+    "sha256": "18bee99ac5ae08989a82c7fd825bf52f4873ed70ac8b7bed433439889ce2f3f1"
+  },
+  {
+    "path": ".github/workflows/ci.yml",
+    "bytes": 1724,
+    "sha256": "8576750123140eabcd5ef9e54c0934b24fb7aabc802e862c50c44fd0316442c0"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 462,
+    "sha256": "64501daf12ffe0bd05ab28fb775a1d64617d8a433f6700635ee6812e7f88061f"
+  },
+  {
+    "path": "CITATION.cff",
+    "bytes": 496,
+    "sha256": "34c25c76e5d33456543f3ffd11c087ace0f9d3f8fc76689510554b851e957f95"
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "bytes": 848,
+    "sha256": "a26581327aa6a33c0791f0a62c5610e6ea998a1759d67793561b147dfa50d9cf"
+  },
+  {
+    "path": "Dockerfile",
+    "bytes": 657,
+    "sha256": "dee93744d3d45a8cd0ddb90adfd4ab8c3572ea1a88f318b8132ba7542b864805"
+  },
+  {
+    "path": "LICENSE",
+    "bytes": 1065,
+    "sha256": "454fbd38be165b6b6a6622fe5a6f9409d12ec5ba9cf9230b0468379336b9bdf5"
+  },
+  {
+    "path": "PROJECT_STRUCTURE.md",
+    "bytes": 2043,
+    "sha256": "8fd0dc3146b9af1a06f16924da3abe35e1ba0c638caae5b8b9f1beec4b2f6d23"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1434,
+    "sha256": "0bbd78f82d97634d7fbcf0dc279b445bf8b9076fff804442f78b25466ddde520"
+  },
+  {
+    "path": "SECURITY.md",
+    "bytes": 862,
+    "sha256": "3e69fb3af60e58134ebe0b419158de57170f3c110826e1a797ec26e6d8083262"
+  },
+  {
+    "path": "THIRD_PARTY_NOTICES.md",
+    "bytes": 1167,
+    "sha256": "83f9a914f6c392377632cbf88d6d20fc357ecf84deee476224d64a4a9d8f5287"
+  },
+  {
+    "path": "constraints.txt",
+    "bytes": 360,
+    "sha256": "751d53f232b49c6461d01638785e9e479d78e900a86972ae51348e00b199f4f1"
+  },
+  {
+    "path": "deploy/.env.cloud.example",
+    "bytes": 585,
+    "sha256": "5e0cac0cb1546c6f1ab2006d0b89ae1049c05f900a9b4ee527eecae0c8899b7e"
+  },
+  {
+    "path": "deploy/Caddyfile",
+    "bytes": 380,
+    "sha256": "be9ef933881ef13407dd3757616115e3e1bb160e73e6a68bdb95b5df436e2649"
+  },
+  {
+    "path": "deploy/Dockerfile.cloud",
+    "bytes": 536,
+    "sha256": "5f54d9f3261a8b62bf816df28fa5064254db4d75bfe5f8dbbdbf92cbc3130477"
+  },
+  {
+    "path": "deploy/compose.cloud.yaml",
+    "bytes": 929,
+    "sha256": "782aa8ed6a48b2d3c1a7e0012c67aa5e445635627d9bbdd72e83c9c8959426e9"
+  },
+  {
+    "path": "docker-compose.yml",
+    "bytes": 1115,
+    "sha256": "b98c10deb9785cc7745eb8e61d113fa1a091f7f2b466a96be21e8790222f11f8"
+  },
+  {
+    "path": "docs/architecture.md",
+    "bytes": 10144,
+    "sha256": "98b5a313b97fa77ebfe44c51352ef9199f9dffb347930c53ce3ec2c02c393347"
+  },
+  {
+    "path": "docs/cloud.md",
+    "bytes": 9663,
+    "sha256": "4e58fe9451bde1356c146c485f5caf1e108d37114e5e2b18c6ae71e2be92816e"
+  },
+  {
+    "path": "docs/deployment.md",
+    "bytes": 5322,
+    "sha256": "e37bf49fe11905030c64d13a8987b872126d67c4275008a7022600decdcf0941"
+  },
+  {
+    "path": "docs/hardware.md",
+    "bytes": 8821,
+    "sha256": "fa7a1c70d55245ed1c674875eb1c30bf6f40ba905739cdcd1805ebf797fc3663"
+  },
+  {
+    "path": "docs/release.md",
+    "bytes": 1376,
+    "sha256": "2d9b28cd18b80d8ff1897bf4f09bed411101b139ede3c639edccb5ffa7754c9c"
+  },
+  {
+    "path": "examples/camera_calibration.example.json",
+    "bytes": 334,
+    "sha256": "c08c1ff33076a4916b1aa5184a347ad8010d6bd75fdab876c2ab74d67cc68384"
+  },
+  {
+    "path": "examples/synthetic_replay.jsonl",
+    "bytes": 2019,
+    "sha256": "197e873f25f3619ab2b85ef4bac903135828e85caa5d38d749de4f20753602e6"
+  },
+  {
+    "path": "firmware/audio_stream.h",
+    "bytes": 3463,
+    "sha256": "805dd3df4dc534bd3c4ea515db5b559f7be540d511f7183b666e4dacd1c6b15e"
+  },
+  {
+    "path": "firmware/camera_pins.h",
+    "bytes": 519,
+    "sha256": "154b1bbdf5cc4c726dedaf7af8613d97985e78efe16fbf240614cfe762128a79"
+  },
+  {
+    "path": "firmware/config.example.h",
+    "bytes": 1357,
+    "sha256": "d38c0b9bba8bd51b456d6de887e228b14a0567bd256e35c23b3d4c227ce56b0d"
+  },
+  {
+    "path": "firmware/config_defaults.h",
+    "bytes": 1598,
+    "sha256": "20e3f58056444e762eaf18e1946edd0755b35ca1506c6ccd1842980ac1bc9b95"
+  },
+  {
+    "path": "firmware/imu_driver.cpp",
+    "bytes": 3448,
+    "sha256": "9f11668e889e33a932ab3dc4138a38ee91e3a9013e9b11433399ea8253c6833f"
+  },
+  {
+    "path": "firmware/imu_driver.h",
+    "bytes": 962,
+    "sha256": "83dc399d83847408368bb505921b2a957d535d3f0987b84ffdf5cb64f47d7356"
+  },
+  {
+    "path": "firmware/microphone_session.h",
+    "bytes": 2287,
+    "sha256": "290e5935e6e70cac214240e425e78cb9c96111fc30892dd7d8dc88272f958cef"
+  },
+  {
+    "path": "firmware/navguide.cpp",
+    "bytes": 20937,
+    "sha256": "ea4ccccde90778b21ec0fec713e8a2e7b7a5816042bbde96c6c4b383047454ea"
+  },
+  {
+    "path": "firmware/network_transport.h",
+    "bytes": 1994,
+    "sha256": "14cd554545c54296f703e07358e667b3df8aac3260f280e53ad7caf31d7faf08"
+  },
+  {
+    "path": "firmware/sensor_math.h",
+    "bytes": 1431,
+    "sha256": "02768829ca284bb3b511475319dbacbfe89109ea4263b550bc59c8e3723a81a7"
+  },
+  {
+    "path": "model/README.md",
+    "bytes": 942,
+    "sha256": "3f8406280cf5ddcfff52e30b07e0df164b0e7772b24d2225644848618353cb16"
+  },
+  {
+    "path": "model/manifest.example.json",
+    "bytes": 142,
+    "sha256": "372e15766a532481b95fe7a71f60fb72497af95f29bc37d258d4f1a5e7ecab20"
+  },
+  {
+    "path": "navguide/__init__.py",
+    "bytes": 34,
+    "sha256": "e8806c17e5c051c2d152c5d70027de0c36bc4455edb6ae564fc6c5f605164920"
+  },
+  {
+    "path": "navguide/__main__.py",
+    "bytes": 121,
+    "sha256": "370d4e6d6519d4ec90b62a52e82f3b2ef1b87f3c2d7ca705079997d12eba1ee1"
+  },
+  {
+    "path": "navguide/audio/__init__.py",
+    "bytes": 33,
+    "sha256": "6cb0b3ea3792e9f1d11d0049952f2e83ee6f3c443027682b3f21a770f73f22f9"
+  },
+  {
+    "path": "navguide/audio/compression.py",
+    "bytes": 13401,
+    "sha256": "0807041de8957af099a952cd6d1dec7f447c250ab530ef3f5082093979cc754f"
+  },
+  {
+    "path": "navguide/audio/player.py",
+    "bytes": 11919,
+    "sha256": "9fbe0052f13e6123d52ca107defc699198da8ae0065f397cfdb09de5a94841ce"
+  },
+  {
+    "path": "navguide/audio/recognition.py",
+    "bytes": 6701,
+    "sha256": "2d3b4ffa903fa21fd8a011405b4824e3f96763caa6844cc1684e9f626a294441"
+  },
+  {
+    "path": "navguide/audio/stream.py",
+    "bytes": 4427,
+    "sha256": "e81e52aa0f3ab5a82345e407be4a002ff88b7c62b39c1fd41649bb62d01d51fa"
+  },
+  {
+    "path": "navguide/cloud/__init__.py",
+    "bytes": 79,
+    "sha256": "5480e77481c77afdfe2f0311b54e72789b958cef06e492d62da9be531aae7694"
+  },
+  {
+    "path": "navguide/cloud/asr.py",
+    "bytes": 10894,
+    "sha256": "03a18dfd8bfa18cc8356debded5153c19de8b7158f1e13cc49e3285522a39dff"
+  },
+  {
+    "path": "navguide/cloud/config.py",
+    "bytes": 2935,
+    "sha256": "6d11f874ac5283793d744a06380aefe7616963a9a0b9dbf6caf5274a3db15445"
+  },
+  {
+    "path": "navguide/cloud/descriptions.py",
+    "bytes": 2953,
+    "sha256": "e75f1ec0833477954089997df3f99837f06fc2f2f5ca814f766a566b5fa08904"
+  },
+  {
+    "path": "navguide/cloud/gateway.py",
+    "bytes": 9687,
+    "sha256": "753a88770b99325598cf6e52c404a8e3b6304852f17457b7eb4628c029ec8d94"
+  },
+  {
+    "path": "navguide/cloud/labels.py",
+    "bytes": 2899,
+    "sha256": "d0ac7febd2b1b0b4dacb7949b628a677bb2e26dbdc80a56eff89d100bf828077"
+  },
+  {
+    "path": "navguide/cloud/provider.py",
+    "bytes": 4937,
+    "sha256": "137d51e74e0dd198507ab69975e9c2e8abf208c8a7d4c20458a88d83769256ee"
+  },
+  {
+    "path": "navguide/core/__init__.py",
+    "bytes": 32,
+    "sha256": "40485444f00f64a9504f3db0ec346e82fa6283c5ec8af60039c475994072c6b3"
+  },
+  {
+    "path": "navguide/core/context.py",
+    "bytes": 6176,
+    "sha256": "b54a3f5aaedf0ea4d3efc812b8eb9fae016038417ec96a3b7afab116ab79aa20"
+  },
+  {
+    "path": "navguide/core/gating.py",
+    "bytes": 3069,
+    "sha256": "9362992afb981e2c03039d44c58e0ae2c32e64840aea5bd417f1b78b1ea6c972"
+  },
+  {
+    "path": "navguide/core/phrasing.py",
+    "bytes": 4899,
+    "sha256": "7db275fcb07a9efe441bf92ab379000551cbddbff534666239e53e704025b5d8"
+  },
+  {
+    "path": "navguide/core/pipeline.py",
+    "bytes": 15899,
+    "sha256": "622721492d5f4684bf05cef47e4c912099e3203285e318169071e80b1feb3ce1"
+  },
+  {
+    "path": "navguide/core/proximity.py",
+    "bytes": 8270,
+    "sha256": "8994100ed8b5508f82ed160027a2e46164b1655f80bb942a2bc5e643c4c352b4"
+  },
+  {
+    "path": "navguide/core/selection.py",
+    "bytes": 25274,
+    "sha256": "b1826842055bedefd48fea02069bd74c3d56cdd4c4ceb38b018593786f23a86a"
+  },
+  {
+    "path": "navguide/i18n.py",
+    "bytes": 1711,
+    "sha256": "fe2ae92d32b47b40f253cb264f869789739d7359a1011d6091b1797ee25260a6"
+  },
+  {
+    "path": "navguide/io/__init__.py",
+    "bytes": 30,
+    "sha256": "39acba4029b74ae610d1e931ef9e0771345fcd878ceaa9cad7ccb02b724dddaf"
+  },
+  {
+    "path": "navguide/io/frame_buffer.py",
+    "bytes": 2312,
+    "sha256": "789dcedea48f06d9a6e452331f6ba8eab4f36c96853b12ebcec966cee608dbb0"
+  },
+  {
+    "path": "navguide/io/recorder.py",
+    "bytes": 10724,
+    "sha256": "da59966d0a8fc2d26182a5126af500062a4ce683abff0cc9505cd623eafc6c25"
+  },
+  {
+    "path": "navguide/locales/zh-CN.json",
+    "bytes": 15491,
+    "sha256": "0b6035c91583349b40a0edbb768a90ad1acd1cdb59a789d3807af8c2658e0aec"
+  },
+  {
+    "path": "navguide/navigation/__init__.py",
+    "bytes": 38,
+    "sha256": "d91cd5423c637e4d01d283131451cfc17257c8e1e95d85de6717afcb480ee845"
+  },
+  {
+    "path": "navguide/navigation/app.py",
+    "bytes": 50627,
+    "sha256": "1936d6dfb7938940228a91be9e8968c61d0253f5d7f9387a770a18d48aec9fc8"
+  },
+  {
+    "path": "navguide/navigation/coordinator.py",
+    "bytes": 27654,
+    "sha256": "fc1e125b1562a19c781c2d63eece2a504922ff76be019b091cf5bc29aefafbc4"
+  },
+  {
+    "path": "navguide/navigation/path_following.py",
+    "bytes": 129447,
+    "sha256": "e5cae40e769c735fd4afdbed823e2d44ddb565c761a0e5846eb6e7874717be00"
+  },
+  {
+    "path": "navguide/navigation/street_crossing.py",
+    "bytes": 82235,
+    "sha256": "250d0c2629c04131b305d06d05ef1c9b443f82cb73a2ba7c2db2fa18948cb2c2"
+  },
+  {
+    "path": "navguide/perception/__init__.py",
+    "bytes": 38,
+    "sha256": "6e1212562a71b6b1f1614a32158ad11fd44cc2a9dd7d61167d29ebc0aca87aaa"
+  },
+  {
+    "path": "navguide/perception/crosswalk.py",
+    "bytes": 12738,
+    "sha256": "804ccb3655e2fd65d4c64b5cde469ca1be3e7c9e6cff4a8ec6bd2026b3f81f77"
+  },
+  {
+    "path": "navguide/perception/item_search.py",
+    "bytes": 77264,
+    "sha256": "2c3be6865d7d2be8d1feda9591404e890301448913b08dc5a131aa633cb056d8"
+  },
+  {
+    "path": "navguide/perception/obstacles.py",
+    "bytes": 6427,
+    "sha256": "4de4b289bae85463b968677055a181ee3e21b796a74a090c9f159e47477bde51"
+  },
+  {
+    "path": "navguide/perception/open_vocabulary.py",
+    "bytes": 3008,
+    "sha256": "76199e2e6c76b8ff3d5f9314b1c01b6476af36fcb1d1cdbbab4d021eeef56bb0"
+  },
+  {
+    "path": "navguide/perception/traffic_lights.py",
+    "bytes": 9014,
+    "sha256": "10237d25a985b0bff560b0e761be2d9a78ac66afc6a4ae3c02d7e9b8a28dc63e"
+  },
+  {
+    "path": "navguide/runtime/__init__.py",
+    "bytes": 35,
+    "sha256": "edcf9a224e31d52ac9adc0c3577f52457241baa116d93c6a8eb61111fb6edfbc"
+  },
+  {
+    "path": "navguide/runtime/access.py",
+    "bytes": 3209,
+    "sha256": "64e40aea28eb7a6ec9847d1eeccd2b1a5ab6e196c2cafacb70b3335d53472b72"
+  },
+  {
+    "path": "navguide/runtime/config.py",
+    "bytes": 3756,
+    "sha256": "87bd7c6c59df37df08e1eebcdf834606a18cbd13c089ece25c26aa98b8522394"
+  },
+  {
+    "path": "navguide/runtime/imu.py",
+    "bytes": 3339,
+    "sha256": "2d188bf1d9fc56622166881b74c85c1b34cba1bf15bbe563e35bf04f44c82a87"
+  },
+  {
+    "path": "navguide/runtime/server.py",
+    "bytes": 25242,
+    "sha256": "e0823c2a6a37f05c772ee9762ca8238960b97e8f21d78aeb5e4eaf893d73dcee"
+  },
+  {
+    "path": "navguide/runtime/speech.py",
+    "bytes": 6371,
+    "sha256": "38e4faae56c7c6ea30b88f359f310e0192a3232d1396ea725ede9692cf5d23d2"
+  },
+  {
+    "path": "navguide/runtime/vision.py",
+    "bytes": 5392,
+    "sha256": "2d8446453965f71839495b6604533878786cffab958e1c8dc5380d33f8ad0846"
+  },
+  {
+    "path": "platformio.ini",
+    "bytes": 850,
+    "sha256": "e377221ed52f452a7ba45d17107b3a1b06ef6ad65d8dafac4607009729f2342a"
+  },
+  {
+    "path": "pytest.ini",
+    "bytes": 42,
+    "sha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003"
+  },
+  {
+    "path": "requirements-cloud.txt",
+    "bytes": 257,
+    "sha256": "010fed2301c5ef8bc552142455b49d25477a0b0e288f3af56b5cb52f2ddf823f"
+  },
+  {
+    "path": "requirements-dev.txt",
+    "bytes": 61,
+    "sha256": "b9c9e77858a35368817f31d7ef45d21956810c3436599348b22f585e73cd9c77"
+  },
+  {
+    "path": "requirements-navigation.txt",
+    "bytes": 176,
+    "sha256": "554afd8297b252445c4d1cb034c331f033e6bcba0d161b35deb573eb18ce2eae"
+  },
+  {
+    "path": "requirements-vision.txt",
+    "bytes": 180,
+    "sha256": "6cc1ef7c6bf0a61e1206d636709f336468c60cf12807090fb5ec4f27cc62c1b0"
+  },
+  {
+    "path": "requirements.txt",
+    "bytes": 200,
+    "sha256": "7c62a5c98fad881d7361008dd01b6c1f96fb96a3ba3c933c76b4b399e2433a8c"
+  },
+  {
+    "path": "scripts/build_firmware.sh",
+    "bytes": 1418,
+    "sha256": "c084f347ec1d0f57eaf76a0fa2a93c9c4cf12078adad467cb8048a17184d67e6"
+  },
+  {
+    "path": "scripts/check_models.py",
+    "bytes": 1236,
+    "sha256": "7d9370af09058fa1d81d446a824e4cd58dd392167193ded986af666cbbf09f00"
+  },
+  {
+    "path": "scripts/evaluate.py",
+    "bytes": 9796,
+    "sha256": "db52794f78c7aa82915cc00d18b963dd329fb62758df71e37efe4e0e3f80804a"
+  },
+  {
+    "path": "scripts/package_source.py",
+    "bytes": 4345,
+    "sha256": "a056826d0d73c01a4283c5d1f6b1df206255f3136ae718a9a792b800b7a458ff"
+  },
+  {
+    "path": "scripts/test_firmware.sh",
+    "bytes": 334,
+    "sha256": "167f098d7e3fcf00b6a3a99407b74fc7d53b9ecba7447ebca7cb4e9640d0548b"
+  },
+  {
+    "path": "setup.bat",
+    "bytes": 269,
+    "sha256": "7e0e1e6185dc89262f37463dce0902cd3f2cb68f1734baedb9f94e6b3140aa1c"
+  },
+  {
+    "path": "setup.sh",
+    "bytes": 520,
+    "sha256": "33aefe939007f9439bb4dc782efe625418ad55ba66dacd62d9314430bf80066f"
+  },
+  {
+    "path": "tests/__init__.py",
+    "bytes": 33,
+    "sha256": "528da4f360152ab7aebed6c920d5a701051667f9c3ccec9f3e3ed2e82d6cbb29"
+  },
+  {
+    "path": "tests/firmware/test_firmware.cpp",
+    "bytes": 7863,
+    "sha256": "43760fee0b40a3cb20713cbc6ba610d227344d2ccf3ab762cedef4fd0b5d4f96"
+  },
+  {
+    "path": "tests/fixtures/locales/zh-CN.json",
+    "bytes": 797,
+    "sha256": "523757eeae0a294672bd03e09f49d9b49d9225e7ab8ac7601dd126799873e256"
+  },
+  {
+    "path": "tests/language_data.py",
+    "bytes": 363,
+    "sha256": "b8faa607ece0560fb228c0ed6f6e8e5fce7269bf2cf4fa770681d7aa2179c5ae"
+  },
+  {
+    "path": "tests/test_algorithm_contract.py",
+    "bytes": 17416,
+    "sha256": "831a1632afd4dbea65c46db6f51e901e992a8b0ae0be99fb5b0aed786817ea5b"
+  },
+  {
+    "path": "tests/test_cloud_asr.py",
+    "bytes": 5833,
+    "sha256": "b8fefa8579ef7a1e276fe8d210754137792f41ce09d54560da86ae507caed887"
+  },
+  {
+    "path": "tests/test_cloud_clients.py",
+    "bytes": 7567,
+    "sha256": "29562d874d3c9a3f457a8286c718beb4eeb5fd075b765958409c6e42ca537bbf"
+  },
+  {
+    "path": "tests/test_cloud_gateway.py",
+    "bytes": 7219,
+    "sha256": "ca8a24d99100c14581e057553c267d7a935082ad8418d489c62e753f6700979c"
+  },
+  {
+    "path": "tests/test_device_service.py",
+    "bytes": 12340,
+    "sha256": "47d1bc3b998dc67b5d928bb138b665307af7a4ea1b76410dabcec9a53d604e1e"
+  },
+  {
+    "path": "tests/test_local_frontend.py",
+    "bytes": 3408,
+    "sha256": "b673291f00f6399b0e02d5c7959f699b98a943372c01255b06232476d2e4cdfe"
+  },
+  {
+    "path": "tests/test_local_speech.py",
+    "bytes": 4520,
+    "sha256": "4d1cf1962b21f9b7214403c4b0d6ead8099b4d25b314bb73d78ff015280e81c2"
+  },
+  {
+    "path": "tests/test_localization.py",
+    "bytes": 3147,
+    "sha256": "814b87b73714e806ef9132ddeadf35ef3e03afd7b67efe85ba2f87d0579670a4"
+  },
+  {
+    "path": "tests/test_navigation.py",
+    "bytes": 18798,
+    "sha256": "bcfca3dfb0d57a0c03e084cdbb87ae04f889ec23434de64d5abdd14d6ee3fb68"
+  },
+  {
+    "path": "tests/test_navigation_detection.py",
+    "bytes": 5645,
+    "sha256": "2f2ee7cb2c5a5f16595f05d3ef0e46a4ff70304981a6b254dea821ede6241f8c"
+  },
+  {
+    "path": "tests/test_path_detection.py",
+    "bytes": 9352,
+    "sha256": "dfbddef7c88565a0d25b8e0d7f1b38e3afff495706734096767ed161fa6ae037"
+  },
+  {
+    "path": "tests/test_release.py",
+    "bytes": 5589,
+    "sha256": "162fa1a852c8b7f351853052c39e489f6921dcfe2c6c82754c91dda3e5f62379"
+  },
+  {
+    "path": "tests/test_service_asr.py",
+    "bytes": 2380,
+    "sha256": "a38b553e0858f2ffba263ac3822d8642d337f992cf04cdcbbb9acd0d851047db"
+  },
+  {
+    "path": "tests/test_traffic_lights.py",
+    "bytes": 14328,
+    "sha256": "bbdf830c34b8731ad967597ef01d35f69dab39b26995487e05fdc8405484c626"
+  },
+  {
+    "path": "web/index.html",
+    "bytes": 6046,
+    "sha256": "e45402c802f8355487a5130f9aa8f7fe49c6330a30a92da7569c996d04f31d77"
+  },
+  {
+    "path": "web/static/locales/zh-CN.json",
+    "bytes": 3014,
+    "sha256": "20b5be159fc2d1963cd0efd82d0d80eb4bae23d663e829f99eb7f9f05d5ca0a7"
+  },
+  {
+    "path": "web/static/localization.js",
+    "bytes": 636,
+    "sha256": "1e5faae0d9959e98894c569dafd4af10e4d49273a815ed8706f52624867c9647"
+  },
+  {
+    "path": "web/static/navigation.js",
+    "bytes": 30042,
+    "sha256": "6b6d6f904c9c52006f09f0faff14c7c851f69964298b76781298ca64637701ea"
+  },
+  {
+    "path": "web/templates/navigation.html",
+    "bytes": 8972,
+    "sha256": "feb5bd01842eabbf7c5741d359bf58cec4990cb46fc0d34c1295b7890958e1f2"
+  }
+]

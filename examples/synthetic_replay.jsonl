@@ -1,0 +1,10 @@
+{"timestamp":0.0,"yaw_rate_dps":0,"scene":"sidewalk","task_mode":"path_navigation","detections":[{"category":"chair","confidence":0.8,"bbox":[100,100,180,210],"track_id":1},{"category":"chair","confidence":0.7,"bbox":[101,101,181,211],"track_id":2},{"category":"bottle","confidence":0.99,"bbox":[500,100,525,140],"track_id":3}]}
+{"timestamp":1.0,"yaw_rate_dps":0,"scene":"sidewalk","detections":[{"category":"chair","confidence":0.8,"bbox":[100,100,180,210],"track_id":1},{"category":"bottle","confidence":0.99,"bbox":[500,100,525,140],"track_id":3}]}
+{"timestamp":3.0,"yaw_rate_dps":25,"scene":"sidewalk","detections":[{"category":"chair","confidence":0.8,"bbox":[100,100,180,210],"track_id":1}]}
+{"timestamp":3.2,"yaw_rate_dps":0,"scene":"sidewalk","detections":[{"category":"chair","confidence":0.8,"bbox":[100,100,180,210],"track_id":1}]}
+{"timestamp":4.0,"yaw_rate_dps":-35,"scene":"sidewalk","detections":[{"category":"car","confidence":0.9,"bbox":[200,40,440,420],"track_id":4,"is_moving":true,"urgency_override":true}]}
+{"timestamp":4.2,"yaw_rate_dps":-35,"scene":"sidewalk","detections":[{"category":"car","confidence":0.9,"bbox":[200,40,440,420],"track_id":4,"is_moving":true,"urgency_override":true}]}
+{"timestamp":5.0,"yaw_rate_dps":40,"scene":"indoor","task_mode":"target_search","target_query":"cup","detections":[{"category":"cup","confidence":0.95,"bbox":[250,100,310,140],"track_id":5},{"category":"chair","confidence":0.9,"bbox":[100,100,180,210],"track_id":1}]}
+{"timestamp":5.2,"yaw_rate_dps":0,"scene":"indoor","detections":[]}
+{"timestamp":8.0,"yaw_rate_dps":0,"scene":"indoor","task_mode":"scene_exploration","detections":[{"category":"chair","confidence":0.8,"bbox":[100,100,180,210],"track_id":1},{"category":"door","confidence":0.9,"bbox":[220,0,310,450],"track_id":6},{"category":"table","confidence":0.9,"bbox":[350,150,490,400],"track_id":7},{"category":"bottle","confidence":0.9,"bbox":[550,200,575,240],"track_id":3}]}
+{"timestamp":10.0,"yaw_rate_dps":0,"scene":"indoor","detections":[]}

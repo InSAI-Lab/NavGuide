@@ -1,0 +1,7 @@
+-r requirements.txt
+# Install platform-specific torch/torchvision first on Jetson.
+ultralytics==8.3.200
+numpy>=1.26,<2
+Pillow>=10.4,<12
+opencv-python>=4.8.1,<4.12
+lap>=0.5.12,<0.6

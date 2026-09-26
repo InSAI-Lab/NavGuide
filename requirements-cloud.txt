@@ -1,0 +1,8 @@
+# Optional cloud client and isolated gateway, Python 3.10 or 3.11.
+# Omni audio parameters require OpenAI Python SDK 1.52 or newer.
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+httpx[socks]>=0.27,<1
+openai>=1.52,<3
+pydantic>=2.9,<3
+websocket-client>=1.8,<2

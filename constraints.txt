@@ -1,0 +1,13 @@
+# Core dependency constraints for Python 3.11.
+# This is a constraints file, not a complete transitive or platform lock.
+# Use: python -m pip install -r requirements-dev.txt -c constraints.txt
+fastapi==0.141.1
+uvicorn==0.54.0
+pydantic==2.13.5
+python-dotenv==1.2.3
+httpx==0.28.1
+openai==2.54.0
+websocket-client==1.9.2
+pytest==8.4.2
+PyYAML==6.0.3
+socksio==1.0.0

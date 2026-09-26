@@ -1,0 +1,23 @@
+{
+  "action.avoid": "注意避让",
+  "action.caution": "注意",
+  "action.proceed_forward": "正前通行",
+  "action.target_found": "目标发现",
+  "action.walk_straight": "顺向直行",
+  "clock.one": "1点钟方向",
+  "clock.twelve": "12点钟方向",
+  "command.find_red_bull": "找红牛",
+  "command.partial_start": "开始",
+  "command.start_navigation": "开始导航",
+  "command.stop_navigation_sentence": "停止导航。",
+  "distance.two_meters": "2米",
+  "object.car": "汽车",
+  "object.cup": "水杯",
+  "object.fire_extinguisher": "灭火器",
+  "object.pole": "立柱",
+  "object.red_bull": "红牛",
+  "protocol.start_navigation": "PROMPT:开始导航",
+  "signal.red": "红灯",
+  "target.unknown_label": "未知标签",
+  "target.unrecognized": "不认识的东西"
+}

@@ -1,0 +1,71 @@
+#pragma once
+#if defined(NAVGUIDE_USE_EXAMPLE_CONFIG)
+#include "config.example.h"
+#elif __has_include("config.h")
+#include "config.h"
+#else
+#include "config.example.h"
+#endif
+#ifndef NAVGUIDE_SERVER_PORT
+#define NAVGUIDE_SERVER_PORT 8081
+#endif
+#ifndef NAVGUIDE_UDP_HOST
+#define NAVGUIDE_UDP_HOST NAVGUIDE_SERVER_HOST
+#endif
+#ifndef NAVGUIDE_UDP_PORT
+#define NAVGUIDE_UDP_PORT 12345
+#endif
+#ifndef NAVGUIDE_DEVICE_TOKEN
+#define NAVGUIDE_DEVICE_TOKEN ""
+#endif
+#ifndef NAVGUIDE_TLS
+#define NAVGUIDE_TLS 0
+#endif
+#ifndef NAVGUIDE_ROOT_CA
+#define NAVGUIDE_ROOT_CA ""
+#endif
+#ifndef NAVGUIDE_IMU_ENABLED
+#define NAVGUIDE_IMU_ENABLED 1
+#endif
+#ifndef NAVGUIDE_CAMERA_SIZE
+#define NAVGUIDE_CAMERA_SIZE FRAMESIZE_VGA
+#endif
+#ifndef NAVGUIDE_CAMERA_MAX_SIZE
+#define NAVGUIDE_CAMERA_MAX_SIZE FRAMESIZE_QXGA
+#endif
+#ifndef NAVGUIDE_CAMERA_FPS
+#define NAVGUIDE_CAMERA_FPS 15
+#endif
+#ifndef NAVGUIDE_JPEG_QUALITY
+#define NAVGUIDE_JPEG_QUALITY 17
+#endif
+#ifndef NAVGUIDE_CAMERA_HMIRROR
+#define NAVGUIDE_CAMERA_HMIRROR 0
+#endif
+#ifndef NAVGUIDE_CAMERA_VFLIP
+#define NAVGUIDE_CAMERA_VFLIP 0
+#endif
+#ifndef NAVGUIDE_IMU_SCK
+#define NAVGUIDE_IMU_SCK 1
+#endif
+#ifndef NAVGUIDE_IMU_MOSI
+#define NAVGUIDE_IMU_MOSI 2
+#endif
+#ifndef NAVGUIDE_IMU_MISO
+#define NAVGUIDE_IMU_MISO 3
+#endif
+#ifndef NAVGUIDE_IMU_CS
+#define NAVGUIDE_IMU_CS 4
+#endif
+#ifndef NAVGUIDE_SPEAKER_BCLK
+#define NAVGUIDE_SPEAKER_BCLK 7
+#endif
+#ifndef NAVGUIDE_SPEAKER_LRCK
+#define NAVGUIDE_SPEAKER_LRCK 8
+#endif
+#ifndef NAVGUIDE_SPEAKER_DIN
+#define NAVGUIDE_SPEAKER_DIN 9
+#endif
+#ifndef NAVGUIDE_SPEAKER_GAIN
+#define NAVGUIDE_SPEAKER_GAIN 0.7f
+#endif

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-i18n="console.title">NavGuide Local Console</title>
+<style>
+body{font:17px/1.6 system-ui,sans-serif;background:#f2f4f2;color:#182a27;max-width:920px;margin:45px auto;padding:0 24px}
+header{border-bottom:2px solid #177460;padding-bottom:16px}h1{margin-bottom:0}h2{font-size:20px}section{background:white;padding:24px;margin:20px 0;border-radius:12px}input,select,button{font:inherit;padding:9px;margin:5px 5px 5px 0;border:1px solid #bac7c3;border-radius:5px}button{background:#177460;color:white;cursor:pointer}label{display:block}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}#guidance{font-size:25px;min-height:50px}.muted{color:#52605c}input[type=password]{width:min(90%,460px)}
+</style>
+<header>
+  <h1>NavGuide</h1>
+  <p class="muted" data-i18n="console.subtitle">Local visual content selection and inertial gating</p>
+</header>
+<section>
+  <h2 data-i18n="console.device_connection">Device Connection</h2>
+  <label for="token" data-i18n="console.device_token">Device token</label>
+  <input id="token" type="password" autocomplete="off" placeholder="Stored in this page's memory only" data-i18n-placeholder="console.token_placeholder">
+  <button id="connect" data-i18n="console.connect">Connect</button>
+  <p id="connection" role="status" data-i18n="console.not_connected">Not connected</p>
+</section>
+<section>
+  <h2 data-i18n="console.task">Guidance Task</h2>
+  <label for="mode" data-i18n="console.task_mode">Task mode</label>
+  <select id="mode">
+    <option value="path_navigation" data-i18n="console.path_navigation">Path navigation</option>
+    <option value="scene_exploration" data-i18n="console.scene_exploration">Scene exploration</option>
+    <option value="target_search" data-i18n="console.target_search">Target search</option>
+  </select>
+  <label for="target" data-i18n="console.target_label">Search target using a detection category name</label>
+  <input id="target" placeholder="For example, bottle" data-i18n-placeholder="console.target_placeholder">
+  <button id="apply" data-i18n="console.apply">Apply</button>
+  <button id="stop" data-i18n="console.stop">Stop guidance</button>
+  <p class="muted" data-i18n="console.example_help">Use the observation example to check content selection, then connect a camera for live detection.</p>
+  <button id="example" data-i18n="console.example">Run one example frame</button>
+</section>
+<section>
+  <h2 data-i18n="console.current_guidance">Current Guidance</h2>
+  <p id="guidance" aria-live="polite" data-i18n="console.awaiting_observation">Waiting for observations</p>
+  <pre id="status" data-i18n="console.awaiting_status">Waiting for status</pre>
+</section>
+<script type="module">
+import { text as localizedText } from '/static/localization.js';
+
+let socket, interval;
+const el = id => document.getElementById(id);
+
+async function api(path, body) {
+  const response = await fetch(path, {
+    method: body ? 'POST' : 'GET',
+    headers: {
+      'Authorization': 'Bearer ' + el('token').value,
+      'Content-Type': 'application/json'
+    },
+    ...(body ? { body: JSON.stringify(body) } : {})
+  });
+  const data = await response.json();
+  if (!response.ok) {
+    throw Error(typeof data.detail === 'string' ? data.detail : JSON.stringify(data.detail));
+  }
+  return data;
+}
+
+function error(e) {
+  el('connection').textContent = e.message;
+}
+
+async function refresh() {
+  const data = await api('/api/status');
+  el('status').textContent = [
+    localizedText('console.guidance_label') + localizedText(data.guidance_enabled ? 'console.enabled' : 'console.stopped'),
+    localizedText('console.input_label') + localizedText(data.frontend === 'yoloe' ? 'console.camera_input' : 'console.observation_input'),
+    localizedText('console.camera_label') + localizedText(data.camera_connected ? 'console.connected' : 'console.disconnected'),
+    localizedText('console.imu_label') + localizedText(data.imu_fresh ? 'console.imu_fresh' : 'console.imu_stale'),
+    localizedText('console.speech_label') + localizedText(data.speech_enabled ? 'console.enabled' : 'console.disabled'),
+    localizedText('console.audio_devices') + data.audio_clients,
+    localizedText('console.audio_triggers') + data.audio_trigger_count
+  ].join('\n');
+}
+
+el('connect').onclick = async () => {
+  try {
+    await refresh();
+    if (socket) socket.close();
+    const token = el('token').value;
+    socket = new WebSocket(
+      (location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws/events',
+      token ? ['navguide', 'auth.' + token] : ['navguide']
+    );
+    socket.onopen = () => el('connection').textContent = localizedText('console.connected');
+    socket.onclose = () => el('connection').textContent = localizedText('console.connection_closed');
+    socket.onmessage = e => {
+      const data = JSON.parse(e.data);
+      if (data.type === 'guidance') {
+        el('guidance').textContent = data.speech_text || localizedText('console.no_cue');
+      }
+    };
+    clearInterval(interval);
+    interval = setInterval(() => refresh().catch(error), 3000);
+  } catch (e) {
+    error(e);
+  }
+};
+
+el('apply').onclick = async () => {
+  try {
+    await api('/api/context', {
+      task_mode: el('mode').value,
+      target_query: el('target').value || null
+    });
+    await refresh();
+  } catch (e) {
+    error(e);
+  }
+};
+
+el('stop').onclick = async () => {
+  try {
+    await api('/api/stop', {});
+    el('guidance').textContent = localizedText('console.guidance_stopped');
+    await refresh();
+  } catch (e) {
+    error(e);
+  }
+};
+
+el('example').onclick = async () => {
+  try {
+    const data = await api('/api/observations', {
+      yaw_rate_dps: 0,
+      detections: [{ category: 'person', confidence: 0.9, bbox: [250, 50, 390, 400], track_id: 1 }]
+    });
+    el('guidance').textContent = data.speech_text || localizedText('console.repetition_suppressed');
+    await refresh();
+  } catch (e) {
+    error(e);
+  }
+};
+</script>
+</html>
