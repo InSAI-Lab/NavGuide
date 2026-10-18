@@ -2,6 +2,15 @@
 
 Wearable spoken guidance with task-aware visual content selection and inertial gating. NavGuide includes a local device service, tactile paving and street crossing workflows, item search, an optional cloud description gateway, and XIAO ESP32S3 Sense firmware.
 
+<p align="center">
+  <a href="docs/media/paper_figure1.png"><img src="docs/media/paper_figure1.png" alt="NavGuide hardware" width="44%"></a>
+  <a href="docs/media/paper_figure2.png"><img src="docs/media/paper_figure2.png" alt="NavGuide method" width="44%"></a>
+</p>
+
+<p align="center">
+  <a href="docs/media/paper_figure3.png"><img src="docs/media/paper_figure3.png" alt="NavGuide field study" width="56%"></a>
+</p>
+
 ## Quick Start
 
 Use Python 3.11:
@@ -30,6 +39,10 @@ Run tests with `python -m pytest -q`.
 - [Project structure](PROJECT_STRUCTURE.md)
 
 For extended navigation, install `requirements-navigation.txt`, prepare the task models and audio assets, then run `python -m navguide.navigation.app`.
+
+<p align="center">
+  <a href="docs/media/navguide_group_qr.png"><img src="docs/media/navguide_group_qr.png" alt="NavGuide group QR code" width="280"></a>
+</p>
 
 ## License
 
